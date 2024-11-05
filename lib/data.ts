@@ -66,7 +66,7 @@ export const projectsData = [
   },
   {
     title: "Zcrum",
-    description: "A public web app for quick analytics on text. It shows word count, character count, and social media post limits.",
+    description: "A Jira Type Project Management Web App for project progress Tracking with features of Assignee and sprint. ",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
     githubUrl: "https://github.com/HAXAZE/Zcrum",
