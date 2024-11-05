@@ -20,8 +20,29 @@ export default function Intro() {
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  // useEffect(() => {
+  //   let timeout;
+  //   if (isDeleting) {
+  //     timeout = setTimeout(() => {
+  //       setDisplayedText((prev) => prev.slice(0, prev.length - 1));
+  //       if (displayedText.length === 0) {
+  //         setIsDeleting(false);
+  //         setRoleIndex((prev) => (prev + 1) % roles.length);
+  //       }
+  //     }, 50); // Adjust speed of deletion
+  //   } else {
+  //     timeout = setTimeout(() => {
+  //       setDisplayedText((prev) => roles[roleIndex].slice(0, prev.length + 1));
+  //       if (displayedText.length === roles[roleIndex].length) {
+  //         setTimeout(() => setIsDeleting(true), 1000); // Wait before starting to delete
+  //       }
+  //     }, 150); // Adjust speed of typing
+  //   }
+  //   return () => clearTimeout(timeout);
+  // }, [displayedText, isDeleting, roleIndex]);
+
   useEffect(() => {
-    let timeout;
+    let timeout: NodeJS.Timeout; // Specify the type for timeout
     if (isDeleting) {
       timeout = setTimeout(() => {
         setDisplayedText((prev) => prev.slice(0, prev.length - 1));
@@ -40,6 +61,7 @@ export default function Intro() {
     }
     return () => clearTimeout(timeout);
   }, [displayedText, isDeleting, roleIndex]);
+  
 
   return (
     <section
