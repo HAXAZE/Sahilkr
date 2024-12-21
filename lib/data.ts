@@ -24,25 +24,11 @@ export const experiencesData = [
     date: "Aug 2021 - Jun 2025",
   },
   {
-    title: "Full Stack Developer Intern",
-    location: "BlueStock Fintech",
-    description: "Designed a responsive frontend with React.js and Tailwind CSS, achieving 95% loading speeds in under 2 seconds. Developed the backend using Django, providing IPO services to over 1,000 users and managing secure record-keeping of over 5,000 IPO records with PostgreSQL.",
-    icon: React.createElement(CgWorkAlt),
-    date: "July 2024 - Aug 2024",
-  },
-  {
     title: "Python Developer Intern",
     location: "KoiReader Technologies",
     description: "Trained machine learning models with Python and OpenCV, achieving 95% accuracy on 1,000+ images. Built a high-performance video processing pipeline, automating workflows to reduce processing time by 50%.",
     icon: React.createElement(CgWorkAlt),
     date: "Jan 2023 - Jun 2024",
-  },
-  {
-    title: "Freelance Full-Stack Developer",
-    location: "Remote",
-    description: "Working as a freelance full-stack developer with a tech stack including React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. Open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "June 2024 - present",
   },
 ] as const;
 
@@ -65,7 +51,7 @@ export const projectsData = [
     liveUrl: "https://foodie-bear.vercel.app/", // Add live link here
   },
   {
-    title: "Zcrum",
+    title: "Scrumly",
     description: "A Jira Type Project Management Web App for project progress Tracking with features of Assignee and sprint. ",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
@@ -76,6 +62,6 @@ export const projectsData = [
 
 export const skillsData = [
   "HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Git", 
-  "Tailwind", "Prisma", "MongoDB", "Redux", "GraphQL", "Apollo", "Express", 
+  "Tailwind", "SQL", "AWS", "Docker" , "Prisma", "MongoDB", "Redux", "GraphQL", "Apollo", "Express", 
   "PostgreSQL", "Python", "Django", "Framer Motion"
 ] as const;
